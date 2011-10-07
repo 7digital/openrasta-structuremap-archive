@@ -1,6 +1,6 @@
 ﻿depends: openwrap content
 depends: openrasta-core
 depends: structuremap = 2.6.2
-build: msbuild; profile=net35; project=src\OpenRasta.DI.StructureMap\OpenRasta.DI.StructureMap.csproj;
+build: msbuild; profile=net35; project=src\OpenRasta.DI.StructureMap\OpenRasta.DI.StructureMap.csproj; project=src\OpenRasta.DI.StructureMap.Tests.Unit\OpenRasta.DI.StructureMap.Tests.Unit.csproj;
 name: openrasta-structuremap
-depends: openrasta-testing
+directory-structure: src\*.{scope:Tests = tests}*
