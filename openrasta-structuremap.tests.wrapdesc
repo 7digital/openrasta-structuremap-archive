@@ -1,1 +1,2 @@
-﻿depends: openrasta-testing
+﻿depends: nunit
+depends: openrasta-testing
